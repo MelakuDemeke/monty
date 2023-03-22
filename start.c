@@ -24,9 +24,9 @@ int main(int argc, char **argv)
 	stack_t *stack = NULL;
 	unsigned int line_cnt = 1;
 
-	global.data_struct = 1;  /* struct defined in monty.h */
+	global.data_struct = 1;  /* struct defined in monty.h L58*/
 	if (argc != 2)
-		error_usage();  /* def in line 82 */
+		error_usage(); /* def in line 82 */
 
 	file = fopen(argv[1], "r");
 
@@ -55,7 +55,7 @@ int main(int argc, char **argv)
 	free(buffer);
 	free_stack(stack);
 	fclose(file);
-	exit(status);
+	exit(EXIT_SUCCESS);
 }
 
 /**
