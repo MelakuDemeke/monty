@@ -101,7 +101,6 @@ size_t print_stack(const stack_t *stack)
  *
  * Return: void
  */
-
 void free_stack(stack_t *stack)
 {
 	stack_t *current = stack;
